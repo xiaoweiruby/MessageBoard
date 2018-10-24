@@ -1,0 +1,179 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-mincer";
+ @import "bootstrap";
+
+ /* General styles */
+
+body {
+	background-color: #fff;
+	font-family: 'Playfair Display', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Muli', sans-serif;
+	font-weight: 300;
+}
+
+.btn-custom {
+	background-color: #fff;
+	color: #0a8fd5;
+	font-family: 'Muli', sans-serif;
+	font-weight: 300;
+	border-radius: 8px;
+	padding: 10px 20px;
+	&:hover {
+		color: #383838;
+		transition: 0.5s;
+		background-color: #fff;
+		text-decoration: none;
+	}
+}
+
+.btn:hover {
+	transition: 0.5s;
+	color: #383838;
+	background-color: #fff;
+}
+
+
+/* Navbar styles */
+
+.navbar {
+	font-family: 'Muli', sans-serif;
+	text-transform: uppercase;
+}
+
+.navbar-default {
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #fff;
+
+	.navbar-nav > li > a {
+		color: #222;
+	}
+
+	.navbar-link {
+		color: #222;
+	}
+
+	.navbar-brand {
+		color: #222;
+		letter-spacing: 1.1px;
+	}
+
+}
+
+
+/* Links styles */
+
+.links {
+	margin-top: 20px;
+	.btn-default {
+		color: #0a8fd5;
+	}
+}
+
+
+/* Message styles */
+
+.message {
+	box-sizing: border-box;
+	background-color: #383838;
+	margin-bottom: 25px;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 1.4em 1.4em;
+	height: 150px;
+	border-bottom: 4px solid #0a8fd5;
+
+	.message-title {
+		font-size: 1.5em;
+		font-family: 'Muli', sans-serif;
+		font-weight: 300;
+		margin-top: 0;
+		color: white;
+		margin-bottom: 25px;
+	}
+
+	.btn-custom {
+		margin-top: 20px;
+	}
+
+}
+
+.message:nth-child(4n) {
+	clear: left;
+}
+
+/* Message show-page styles */
+
+.message-show {
+	box-sizing: border-box;
+	background-color: #383838;
+	padding: 2.0em 1.5em;
+	border-bottom: 4px solid #0a8fd5;
+	color: #fff;
+	font-family: 'Muli', sans-serif;
+	font-weight: 300;
+
+	h2 {
+		margin-top: 0;
+	}
+
+	.message-desc {
+		font-size: 1.1em;
+		line-height: 1.75;
+		margin-bottom: 50px;
+	}
+
+	.message-posted-by {
+		color: #eee;
+		font-size: 0.9em;
+	}
+
+	.reply-to-msg {
+		margin-top: 50px;
+	}
+
+}
+
+
+/* Comment styles */
+
+.comment {
+	border-bottom: 1px solid #fff;
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+	.comment-content {
+		font-size: 1.25em;
+	}
+
+	.comment-posted-by {
+		color: #eee;
+		font-size: 0.8em;
+	}
+
+	.links {
+		margin-top: 15px;
+		a {
+			color: #0a8fd5;
+			margin-right: 15px;
+		}
+	}
+}
